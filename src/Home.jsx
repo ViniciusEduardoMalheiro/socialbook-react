@@ -9,7 +9,7 @@ export function Home(props) {
                 <img src={img} alt="" className={styles.imgSocial} />
             </div>
             <div className={styles.rigthLogin}>
-                <div className={styles.form}>
+                <form className={styles.form}>
                     <h1 >LOGIN</h1>
                     <div className={styles.textfield}>
                         <label htmlFor='usuario'>Usuário</label>
@@ -20,7 +20,7 @@ export function Home(props) {
                         <input type="password" name="senha" placeholder="Senha" onChange={(e) => props.setPassword(e.target.value)} required={true} />
                     </div>
                     <button className={styles.buttonLogin} onClick={props.handleUser} >Login</button>
-                </div>
+                </form>
             </div>
         </div>
     )
